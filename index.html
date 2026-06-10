@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lista de exercicios 02</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://googleapis.com" rel="stylesheet">
+  </head>
+  <body>
+    <h1> Lista de Exercícios 02</h1>
+      
+    <details>
+      <summary> Exercício 01: O despertador filosofólico </summary>
+      <p> Digite um número do dia da semana: </p>
+      <input type="number" id="in01" />
+      <button onclick="Despertador()"> Executar </button>
+      <p id="out01"></p>
+    </details>
+      
+    <details>
+      <summary> Exercício 02: A calculadora do padeiro  </summary>
+      <p> Informe a quantidade de pães vendidos: </p>
+      <input type="number" id="in02" />
+      <p> Informe a quantidade de broas vendidas: </p>
+      <input type="number" id="in03" />
+      <button onclick="Calc_Padeiro()"> Executar </button>
+      <p id="out02"></p>
+    </details>
+      
+    <details>
+      <summary> Exercícios03: A árvore mateática </summary>
+      <p> informe a idade da árvore: </p>
+      <input type="number" id="in04" /> 
+      <button onclick="Calc_Altura()"> executar </button>
+      <p id="out03"></p>
+    </details>
+      
+    <details>
+      <summary> Exercícios 04: a senha da Caverna </summary>
+      <p> informe a senha da caverna: </p>
+      <input type="number" id="in05" /> 
+      <button onclick="Verificar_senha()"> Verificar </button>
+      <p id="out04"></p>
+    </details>
+      
+    <details>
+      <summary> Exercícios 05: A Lanchonete </summary>
+      <p> Menu: <br>
+      1 - Hambúrguer R$12,00 <br>
+      2 - Pizza R$20,00 <br>
+      3 - Refrigerante R$5,00 <br>
+      4 - Finalizar Pedido <br> </p>
+      <p> Faça seu pedido: </p>
+      <input type="number" id="in06" min="1" max="4"/>
+      <button onclick="Adicionar_Pedido()"> Adicionar Pedido </button>
+      <p id="out05"></p>
+    </details>
+        
+    <details>
+      <summary> Exercícios 06: A votação nao diplomatica </summary>
+      <p> candidatos <br>
+      1 - Alvo <br>
+      2 - Btus <br>
+      3 - Cetas <br>
+      0 - Finalizar voto <br> </p>
+      <p> Faça seu voto: </p>
+      <input type="number" id="in07" min="0" max="3"/>
+      <button onclick="votar()"> Adicionar voto </button>
+      <p id="out06"></p>
+    </details>
+        
+    <details>
+      <summary> Exercícios 07: A Loja de Roupas grega </summary>
+      <p> Opções de itens: <br>
+      1 - calzinha R$25,00 <br>
+      2 - camiseta R$20,00 <br>
+      3 - sapato R$100,00 <br>
+      0 - Finalizar Pedido <br> </p>
+      <p> escolha seu item </p>
+      <input type="number" id="in08" min="0" max="3"/>
+      <button onclick="Adicionar_item()"> Adicionar item </button>
+      <p id="out07"></p>
+    </details>
+        
+    <details>
+      <summary> Exercicico 08: decomponha </summary>
+      <p> Informe um número que deseja decompor: <br> </p>
+      <input type="number" id="in09" min="-999999" max="999999" />
+      <button onclick="Decompor()"> Decompor número </button>
+      <p id="out08"></p>
+    </details>
+      
+    <details>
+      <summary> Exercicio 09: O Cozinheiro Matemático </summary>
+      <p> Informe uma quantidade de porções que você deseja fazer: </p>
+      <input type="number" id="in10" min="0" />
+      <button onclick="calcular()"> calcular </button>
+      <p id="out09"></p>
+    </details>
+      
+    <details>
+      <summary> Exercicio 10: O elevador </summary>
+      <p>Informe o peso de 1 pessoa </p>
+      <input type="number" id="in11" min="0" />
+      <p> Informe o peso da 2 pessoa: </p>
+      <input type="number" id="in12" />
+      <p> Informe o peso da 3 pessoa: </p>
+      <input type="number" id="in13" />
+      <p> Informe o peso da 4 pessoa: </p>
+      <input type="number" id="in14" />
+      <p> Informe o peso da 5 pessoa: </p>
+      <input type="number" id="in15" />
+      <p> Informe o peso da 6 pessoa: </p>
+      <input type="number" id="in16" />
+      <button onclick="VerificarP()"> Verificar peso</button>
+      <p id="out10"></p>
+    </details>
+
+    <details>
+      <summary> Exercicio 11: A Loja do Desconto Inverso</summary>
+      <p> Menu de preços: <br>
+      Até R$ 50,00: 10% de desconto <br>
+      De R$ 51,00 a R$ 100,00: 5% de desconto <br>
+      Acima de R$ 100,00: sem desconto <br> </p>
+      <p> Faça seu pedido: </p>
+      <input type="number" id="in17" min="0" />
+      <button onclick="Usar_desconto()"> Usar Desconto </button>
+      <p id="out11"></p>
+    </details>
+      
+    <details>
+      <summary> Exercício 12 - O Detetive dos Números </summary>
+      <p> Informe o número: </p>
+      <input type="number" id="in18" min="0" />
+      <button onclick="averiguar()"> averiguar número </button>
+      <p id="out12"></p>
+    </details>
+      
+    <details>
+      <summary> Exercício 13 - O Robô Contador </summary>
+      <p> Informe o primeiro valor da sequência: </p>
+      <input type="number" id="in19" />
+      <p> Informe o ultimo valor da sequência: </p>
+      <input type="number" id="in20" />
+      <button onclick="contar()"> contar </button>
+      <p id="out13"></p>
+    </details>
+    
+    <details>
+      <summary>Exercício 14 - O Caixa Eletrônico</summary>
+      <p>Informe o numero que deseja sacar </p>
+      <input type="number" id="in21"/>
+      <button onclick="sacar()"> Sacar </button>
+      <p id="resultado1"></p>
+    </details>
+    
+    <details>
+      <summary>Exercício 15: Palíndromo</summary>
+      <p>
+        <input type="number" id="num" placeholder="Insira um número (máx. 6 dígitos)" />
+      </p>
+      <p>
+        <button onclick="checar()">Verificar</button>
+      </p>
+      <p id="msg"></p>
+    </details>
+
+    <script src="script.js"></script>
+  </body>
+</html>
